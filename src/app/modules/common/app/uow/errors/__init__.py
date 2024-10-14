@@ -1,0 +1,2 @@
+class MissingUowContext(Exception):
+    pass
