@@ -1,0 +1,2 @@
+class RegistrationAlreadyExists(Exception):
+    pass
