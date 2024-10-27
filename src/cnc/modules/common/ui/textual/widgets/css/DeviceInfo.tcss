@@ -1,0 +1,16 @@
+DeviceInfo {
+    layout: horizontal;
+}
+
+Sparkline {
+    align: left top;
+    width: 8fr;
+    margin: 0 1;
+}
+
+DataTable {
+    align: right top;
+    width: 2fr;
+    min-width: 15;
+    margin: 0 1;
+}

@@ -58,6 +58,12 @@ migrate-generate:
 asgi:
 	cd src && PYTHONPATH=. poetry run python3 entrypoints/asgi_dev.py
 
+# TODO: Contribute to watchdog to add --start-first
+# 	https://github.com/gorakhargosh/watchdog/issues/301
+tui-dev:
+#	bash -c "sleep 1 && touch ./src/cnc/__init__.py" &
+#	poetry run watchmedo shell-command --patterns='*.py;*.txt;*.tcss' --recursive --command="poetry run textual run --dev src/entrypoints/tui.py" ./src/cnc
+	poetry run src/entrypoints/tui.py
 
 # Code things
 static-check: style-check type-check
